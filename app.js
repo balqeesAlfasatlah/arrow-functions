@@ -198,13 +198,12 @@ Student.prototype.scopeArrow = () => console.log(this);
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-//  its undefined because in normal function we cant acess to this because its not global , its inside the scope
+//  joe
 
 // 2. What is "this" when joe.scopeArrow() is invoked?
 
-//the this is not reset within an arrow function. The value of this is the same as the this of the enclosing scope . 
+// the global window object 
 
 // 3. Explain why "this" is different when an arrow function is used.
 
-//in arrow function we can access to this because The value of this inside an arrow function remains the same throughout the lifecycle of the function 
-//and is always bound to the value of this in the closest non-arrow parent function.
+// the arrow function dont bind the this context
